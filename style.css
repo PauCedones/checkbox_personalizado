@@ -1,0 +1,36 @@
+#prueba{
+    display:none;
+}
+
+.tildar{
+    background: url(img/checkbox.png); 
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+    background-size: 500%;
+    border: solid 1px pink;
+}
+
+#prueba + .tildar{
+    background-position: -15px -266px; 
+}
+
+#prueba:checked + .tildar {
+    background-position: -105px -266px;
+}
+
+#prueba:hover + .tildar {
+    background-position: -60px -266px;
+}
+
+/* 
+PASO A PASO
+1) hacer la clase "tildar" agregarle el background-image 
+2) agregar el width y el height, procura que no sea tan chiquito al comienzo para poder ver donde tenes la imagen, sino te vas a perder 
+3) si aun no encontras la imagen, usa background-size y agrandalo o achicalo tanto como para saber que esta ahi!
+4) no te olvides de guiarte con un border, para saber el tamaño de tu width y height :)
+5) comenzamos con la casilla sin tildar, la que vendria de base, empezamos a mover con background-position arriba-abajo izquierda-derecha hasta dejarlo pipi cucu
+5.1) acordate que tenes todo super agrandado y que tarde o temprano vas a tener que ponerle la escala correcta, asi que cuando encuentres todo, de a poco vas achicando la escala, digo de a poco, para que no se te pierda nada, ya que todo es fondo blanco, te va a costar encontrarlo y saber orientarte D:
+6)cuando ya tenes todo posicionado podes proceder a hacer el resto, checked y hover y posicionar cada uno, que dolor de ogt jajajajaj
+7) ahora disfruta de tu checkbox personalizado! xD 
+*/
